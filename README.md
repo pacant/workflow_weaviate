@@ -57,6 +57,7 @@ In both cases the system will suggest you two movies with a short description.
 
 How it works? 
 The recommendations are made with tags. If you input a movie title, the system will retrieve the tags for that title from Weaviate database and search for the movies with most similar tags. Or you can directly input some tags that you find interesting.
+In the MovieLens dataset tags are basically keywords relevant to the movie inserted by users.
 
 Both movie titles and tags are vectorized indipendently in the Weaviate database, the searches are done with vector similarity, adding the generative search that passes the results to prompt an LLM (Cohere).
 
